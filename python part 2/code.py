@@ -127,12 +127,37 @@ match color:
 
 # odd num 1 to 10
 
-i = 0
+# i = 0
 
-while( i < 10 ):
-    i += 1
-    if( i % 2 == 0 ):
-        continue
+# while( i < 10 ):
+#     i += 1
+#     if( i % 2 == 0 ):
+#         continue
+#     print(i)
+
+
+# string = "siddhesh"
+
+# for var in string:
+#     print(var)
+
+''' word = "artificial intelligence"
+
+count = 0
+
+for ch in word:
+    if( ch == "i"):
+        count += 1
+
+print(count) '''
+
+
+# range()
+
+for i in range(5):
+    print(i) #0,1,2,3,4
+
+for i in range(1,6):
     print(i)
 
 
