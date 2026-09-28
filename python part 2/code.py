@@ -152,13 +152,43 @@ for ch in word:
 print(count) '''
 
 
-# range()
+''' # range()
 
 for i in range(5):
     print(i) #0,1,2,3,4
 
 for i in range(1,6):
-    print(i)
+    print(i) ''' 
+
+''' def nums():
+    
+    for i in range(5):
+        print(i) #0,1,2,3,4
+
+    for i in range(1,6):
+        print(i)
+    
+# nums() '''
 
 
+''' def S(a,b): #This is the parameters in the function #fnx definition
+    sum = a + b
+    return sum
 
+print("Ans = ", S(10,20)) #these are the arguments of the function #calling ''' 
+
+''' # Take the 3 parameters and calculate the avg of 3 numbers using function
+
+def avg(a,b,c):
+    A = a+b+c
+    return A/3 
+
+print("Average of 3 numbers: ", avg(12,45,67)) '''
+
+# default value
+
+def fnxname(a,b =1): #always the non-deafult value (a) comes first in parameters and then the deafult value (b=1)
+    return a+b
+
+print(fnxname(5))
+print(fnxname(5,10))
