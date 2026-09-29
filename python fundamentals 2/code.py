@@ -185,10 +185,18 @@ def avg(a,b,c):
 
 print("Average of 3 numbers: ", avg(12,45,67)) '''
 
-# default value
+''' # default value
 
 def fnxname(a,b =1): #always the non-deafult value (a) comes first in parameters and then the deafult value (b=1)
     return a+b
 
 print(fnxname(5))
-print(fnxname(5,10))
+print(fnxname(5,10)) '''
+
+# lambda function
+
+sum = lambda a , b : a + b
+print(sum(2,5))
+
+avg = lambda a , b : (a + b)/2
+print(avg(2,5)) 
