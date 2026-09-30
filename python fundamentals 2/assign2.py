@@ -29,14 +29,34 @@ def even_num(a,b):
 
 print(even_num(20,30)) '''
 
-#Q3. Write a function that prints the digits of a number, n
+''' #Q3. Write a function that prints the digits of a number, n
 
 def digit(n):
     for i in str(n):
         print(i)
-digit(345)
+digit(345) '''
 
+''' #Q4. Write a function to return the count the number of digits in a number, n
 
+def count_digit(n):
+    count = 0
+    for i in str(abs(n)):
+        count += 1
+    return count
+
+n = int(input("Enter any number: "))
+print(count_digit(n)) '''
+
+#Q5. Write a function to return the sum of digits of a number, n.
+
+def sum_digit(n):
+    sum = 0
+    for i in str(abs(n)):
+       sum += int(i)
+    return sum
+
+n = int(input("Enter the number: "))
+print("The sum of the digits are: ", sum_digit(n))
 
 
 
