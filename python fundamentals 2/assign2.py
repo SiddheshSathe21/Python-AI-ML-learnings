@@ -47,7 +47,7 @@ def count_digit(n):
 n = int(input("Enter any number: "))
 print(count_digit(n)) '''
 
-#Q5. Write a function to return the sum of digits of a number, n.
+''' #Q5. Write a function to return the sum of digits of a number, n.
 
 def sum_digit(n):
     sum = 0
@@ -56,7 +56,64 @@ def sum_digit(n):
     return sum
 
 n = int(input("Enter the number: "))
-print("The sum of the digits are: ", sum_digit(n))
+print("The sum of the digits are: ", sum_digit(n)) '''
+
+''' #Q6. Write a function that takes a number n and returns the reverse of the number.
+
+def reverse_num (n):
+    rev = 0
+    while n > 0:
+        digit = n % 10
+        rev = rev * 10 + digit
+        n = n // 10
+    return rev
 
 
+n = int(input("Enter any number: "))
+print("The Reverse number: ", reverse_num(n)) '''
 
+''' #Q7.Write a function that takes a number n and checks whether the number is a palindrome or not.
+
+def pallindrome_num(n):
+    og = n
+    rev = 0
+    while n >0:
+        digit = n % 10
+        rev = rev * 10 + digit
+        n = n // 10
+    if(rev == og):
+        print(f'This is a pallindrome')
+        print(f'input: ',og)
+        print(f'reverse ',rev)
+    else:
+        print("This is not a pallindrome")
+
+n = int(input("Enter a number:"))
+pallindrome_num(n)'''
+
+''' #QLetʼs create a Simple Calculator that performs arithmetic operations. Create a function that performs addition, subtraction, multiplication, or division based on the parameter.  calculator(a, b, operation) operation [ parameter can have values , , & .operation ‘+’ ‘-’ '*’ ‘/’]
+
+def SimpleCalculator( a,b, operation ):
+
+    if(operation == '+'):
+        print("Addtion: ", a+b)
+    
+    elif(operation == "-"):
+        print("Subtraction: ", a-b)
+
+    elif(operation == "*"):
+        print("Multiplication: ", a*b)
+        
+    elif(operation == "/"):
+        if b != 0:
+            print("Division: ", a/b)
+        else:
+            print("Cannot divide by zero!")
+        
+    else:
+        print("Invalid Opearation!")
+
+SimpleCalculator(2,3, "+")
+SimpleCalculator(2,3, "*")
+SimpleCalculator(2,3, "/")
+SimpleCalculator(2,3, "-") '''
