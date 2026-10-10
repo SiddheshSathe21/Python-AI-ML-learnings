@@ -118,7 +118,7 @@ SimpleCalculator(2,3, "*")
 SimpleCalculator(2,3, "/")
 SimpleCalculator(2,3, "-") '''
 
-#Q9.Write a function is_prime(n) that returns True if n is a prime number and False otherwise, using a loop.
+''' #Q9.Write a function is_prime(n) that returns True if n is a prime number and False otherwise, using a loop.
 
 def is_prime(n):
     if n < 2:
@@ -130,5 +130,30 @@ def is_prime(n):
 
     return True
 
-print(is_prime(7))
+print(is_prime(7)) '''
+
+#Q10.Letʼs create a “Number Guessing Game ”. Given a secret number (already decided by you), write a program that asks the user to guess it and prints:
+# • if the guess is above the number"Too high"
+# • if the guess is below"Too low"
+# • if the guess matches"Correct!"
+
+def game(n):
+    
+    sec_num = 7
+
+    print("============ Guess the Number =============")
+    while True:
+        n = int(input("Enter the guessing number: "))
+        if(n > 7):
+            print("Too high!")
+        elif(n < 7):
+            print("Too low!")
+        elif(n == 7):
+            print("Correct guess")
+            break
+
+    return 1
+
+n = 0
+game(n)
 
